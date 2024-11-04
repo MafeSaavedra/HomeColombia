@@ -1,2 +1,3 @@
 # HomeColombia
 Esta página web para Home Colombia busca presentar los servicios y proyectos de la constructora de forma profesional y accesible. Desarrollada con HTML, CSS, JavaScript, y React, la página incluirá secciones como Inicio, Nosotros, Proyectos, Servicios y Contacto. 
+Este sitio web tiene como objetivo proporcionar a los visitantes una plataforma atractiva y fácil de navegar, donde puedan conocer más sobre la empresa, sus proyectos y servicios. A través de un diseño visualmente atractivo y una estructura intuitiva, los usuarios podrán explorar toda la información que necesitan para tomar decisiones informadas.
