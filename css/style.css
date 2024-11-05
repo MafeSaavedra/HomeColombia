@@ -1,0 +1,50 @@
+:root {
+    --color-white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main-sup {
+    display: grid;
+    min-height: 100vh;
+    /* Cambié '100dvh' a '100vh' */
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    background-color: #2f653a;
+}
+
+main {
+    background-color: #bedfed;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+body {
+    background: #ffffff;
+    /* fallback for old browsers */
+    font-family: 'quicksand', sans-serif;
+    font-weight: 500;
+
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.box {
+    background-color: rgb(218, 244, 244);
+}
