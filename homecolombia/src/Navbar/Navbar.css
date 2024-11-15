@@ -1,5 +1,9 @@
 .Nav-back {
-    background-color: #2f653a;
+    /* background-color: #2f653a; */
+    background-image: url('../img/fondoNav.png');
+    background-size: 102% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .ctn {
@@ -17,7 +21,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
+    padding: 24px;
 
 }
 
@@ -30,7 +34,9 @@
 }
 
 .navbar-links li {
-    margin: 0 15px;
+    margin: 0 12px;
+    margin-bottom: 15px;
+
 
 }
 
@@ -63,7 +69,7 @@
 
 .logohome {
 
-    width: 220px;
+    width: 180px;
     height: auto;
 }
 
@@ -72,6 +78,12 @@
 }
 
 @media (max-width: 850px) {
+
+    .Nav-back {
+        background-color: #315241;
+        background-image: url('');
+    }
+
     .navbar-links ul {
         display: flex;
         flex-direction: column;

@@ -1,0 +1,56 @@
+.Footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 0.5fr;
+    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+    margin: 0 auto;
+    width: 95%;
+    height: 100%;
+    gap: 10px 10px;
+    background-color: #315241;
+    ;
+
+}
+
+
+.Section {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #315241;
+}
+
+
+.Ft-content1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    border-radius: 8px;
+    width: 100%;
+    min-height: 100px;
+    flex-wrap: wrap;
+    overflow: hidden;
+    word-wrap: break-word;
+
+
+}
+
+.Ft-content1 h1 {
+    text-align: center;
+    word-wrap: break-word;
+    font-size: 1.2rem;
+    margin: 0 auto;
+}
+
+.logof {
+    width: 100%;
+    object-fit: fill;
+
+}
+
+.logof:hover {
+    /* //Sombra iluminada (desplazamiento en x, desplazamiento en y, grosor de la sombra, color) */
+    filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.8));
+}

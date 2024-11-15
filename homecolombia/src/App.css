@@ -1,0 +1,9 @@
+header {
+    position: fixed;
+    /* Fija el header a la parte superior de la página */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    /* Asigna un índice z más alto para que el navbar esté por encima del contenido */
+}
