@@ -1,6 +1,8 @@
+
 import { useState } from "react";
 import './Navbar.css';
-import logoImg from '../img/logohome.svg';
+import logoImg from '../img/Milogohome.png';
+
 
 export function Navbar({ logo = logoImg }) {
     const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +17,7 @@ export function Navbar({ logo = logoImg }) {
                         <ul>
                             <li><a href="#home.jsx">Inicio</a></li>
                             <li><a href="#productos.jsx">Contáctanos</a></li>
-                            <li><a href="#contact">Nuestros Proyectos</a></li>
+                            <li><a href="#contact">Proyectos</a></li>
                         </ul>
                     </div>
                 </div>

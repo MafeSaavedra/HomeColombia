@@ -1,0 +1,23 @@
+.btn-comprar {
+    font-family: 'quicksand', 'sans-serif';
+    font-weight: 500;
+    font-size: 20px;
+    padding: 18px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background-color: #315241;
+    color: white;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+
+
+}
+
+.btn-comprar:hover {
+    background-color: #315241ee;
+    color: rgb(255, 255, 255);
+    box-shadow: 4px 6px 12px rgba(95, 221, 137, 0.652);
+    transform: translateY(-2px);
+}
