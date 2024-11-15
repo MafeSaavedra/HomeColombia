@@ -4,13 +4,14 @@ import entradasun from '../img/SunriseEntrada.jpg';
 import Filatres from '../img/Filatres.png';
 import { Boton } from '../Components/Boton.jsx';
 import logoImg2 from '../img/Milogohome.png';
+import { Bento } from '../Components/Bento.jsx';
 
 export function CtMain({ logo = logoImg2 }) {
     return (
         <>
             <section className="Contenedor-First">
                 <div className="Welcome-page">
-                    <img className='entradasun' src={entradasun} alt="Entrada" />
+                    <img src={entradasun} alt="Entrada" id="imagen-herocontent" />
                 </div>
                 <div className="Welcome-page">
                     <section className='hero-content'>
@@ -21,13 +22,13 @@ export function CtMain({ logo = logoImg2 }) {
                             <img className="logohome" src={logo} alt="Logo" />
                             <h3>Donde la calidad y la innovación se unen</h3>
 
-                            <Boton children="Contacta a Nuestro Equipo" />
+                            <Boton children="Contactanos" />
                         </div>
                     </section>
                 </div >
                 <div className="Welcome-page">
                     <div className='Img-filatres'>
-                        <img className='entradasun' src={Filatres} alt="Entrada" />
+                        <img src={Filatres} alt="Entrada" />
                     </div>
                 </div>
                 <div className="Welcome-page" >
@@ -38,10 +39,16 @@ export function CtMain({ logo = logoImg2 }) {
                     </section>
                 </div>
                 <div className="Welcome-page">
-                    <h1>PROYECTO EN CONSTRUCCIÓN</h1>
+                    <div className='Contenido-ultimafila'> <h1>PROYECTO EN CONSTRUCCIÓN</h1>
+                        <h3>En TorreSan, la innovación y la belleza natural se unen
+                            para crear un espacio que inspira y renueva. </h3>
+                        <h2>¡Ven y descubrelo por ti mismo!</h2>
+                        <Boton children="Conocer Proyecto" /></div>
+
                 </div>
                 <div className="Welcome-page">
-                    <h1>Podría ir una imagen aquí</h1>
+                    {/* Componente creado en la carpeta components */}
+                    <Bento />
                 </div>
             </section >
         </>

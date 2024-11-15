@@ -3,13 +3,10 @@
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(65vh, 1fr));
-    grid-auto-rows: minmax(0, 450px);
+    grid-auto-rows: minmax(0, 480px);
     max-width: 100%;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-
-
 }
 
 .Welcome-page {
@@ -22,6 +19,7 @@
     height: 100%;
     overflow: hidden;
 
+
 }
 
 .Welcome-page h1 {
@@ -31,11 +29,21 @@
     margin: 0 auto;
 }
 
-.Welcome-page img {
+
+
+.Welcome-page #imagen-herocontent {
+    mask-image: linear-gradient(white 55%, transparent);
+    position: absolute;
+    object-fit: cover;
     width: 100%;
-    height: auto;
-    object-fit: fill;
+    height: 90%;
+    overflow: hidden;
+    z-index: -1;
+
 }
+
+
+
 
 .Contenedor-First div:first-child {
     grid-column: 1/3;
@@ -48,12 +56,13 @@
 
 
 
+
 }
 
 .hero-content {
     display: grid;
-    grid-template-columns: 1fr, 1fr;
-    grid-auto-rows: minmax(0, 150px);
+    grid-auto-rows: minmax(0, 180px);
+    grid-auto-columns: minmax(0, 180px);
     justify-content: center;
     align-items: center;
 }
@@ -87,7 +96,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 100%;
 }
 
 .container-hero h3 {
@@ -101,7 +110,8 @@
     display: flex;
     margin: 10px auto;
     align-items: center;
-    width: 80%;
+    width: 100%;
+    padding: 15px;
     justify-content: center;
 
 
@@ -130,19 +140,57 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 95%;
+    width: 90%;
 
-    height: 100%;
+    height: auto;
 
 }
 
 .Img-filatres img {
 
-    width: 85%;
-    margin-left: 50px;
+    width: 480px;
+    margin-left: 110px;
     height: auto;
     object-fit: contain;
 
 
 
+}
+
+.Contenido-ultimafila {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Contenido-ultimafila h1 {
+    font-size: 35px;
+    color: #315241;
+}
+
+.Contenido-ultimafila h2 {
+    font-size: 23px;
+    color: #315241;
+    text-shadow: 0px 0px 15px #d7efe0;
+    animation: animar-sombra 3s infinite;
+}
+
+@keyframes animar-sombra {
+    0% {
+        transform: scale(1);
+        /* El tamaño original */
+    }
+
+    50% {
+        transform: scale(1.1);
+        /* El tamaño más grande */
+    }
+
+    100% {
+        transform: scale(1);
+        /* El tamaño original nuevamente */
+    }
 }
