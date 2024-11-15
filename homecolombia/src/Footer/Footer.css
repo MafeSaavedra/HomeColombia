@@ -18,15 +18,16 @@
     justify-content: center;
     margin: 0 auto;
     background-color: #315241;
+
+
 }
 
 
 .Ft-content1 {
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-
+    justify-content: flex-start;
+    text-align: left;
     border-radius: 8px;
     width: 100%;
     min-height: 100px;
@@ -35,10 +36,11 @@
     word-wrap: break-word;
 
 
+
 }
 
 .Ft-content1 h1 {
-    text-align: center;
+    text-align: left;
     word-wrap: break-word;
     font-size: 1.2rem;
     margin: 0 auto;
@@ -46,11 +48,22 @@
 
 .logof {
     width: 100%;
-    object-fit: fill;
+    height: 70%;
+    object-fit: contain;
+    margin-right: 60px;
+
 
 }
 
 .logof:hover {
     /* //Sombra iluminada (desplazamiento en x, desplazamiento en y, grosor de la sombra, color) */
     filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.8));
+}
+
+.info-contacto-foot {
+    display: block;
+    margin: 5px auto;
+
+    width: 100%;
+
 }

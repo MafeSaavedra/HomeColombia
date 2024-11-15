@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Footer.css";
-import logofooter from '../img/logohome.svg';
+import logofooter from '../img/Milogohome.png';
+
 
 export function Footer({ logof = logofooter }) {
     return (
@@ -10,11 +11,14 @@ export function Footer({ logof = logofooter }) {
                     <img className="logof" src={logof} alt="Logo" />
                 </div>
                 <div className="Ft-content1">
-                    <h1>Contacto</h1>
-                    <ul>
-                        <li>Ventas</li>
-                        <li>Atención al cliente</li>
-                    </ul>
+                    <div className='info-contacto-foot'>
+                        <h1>Contacto</h1>
+                        <ul>
+                            <li>Ventas</li>
+                            <li>Atención al cliente</li>
+                        </ul>
+                    </div>
+
                 </div>
                 <div className="Ft-content1">
                     <h1>Logos</h1>
