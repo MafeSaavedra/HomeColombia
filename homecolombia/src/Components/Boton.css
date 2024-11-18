@@ -18,6 +18,6 @@
 .btn-comprar:hover {
     background-color: #315241ee;
     color: rgb(255, 255, 255);
-    box-shadow: 4px 6px 12px rgba(95, 221, 137, 0.652);
+    box-shadow: 4px 6px 12px rgba(21, 71, 38, 0.681);
     transform: translateY(-2px);
 }

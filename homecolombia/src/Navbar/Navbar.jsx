@@ -4,6 +4,7 @@ import './Navbar.css';
 import logoImg from '../img/Milogohome.png';
 
 
+
 export function Navbar({ logo = logoImg }) {
     const [isOpen, setIsOpen] = useState(false);
     const toggleMenu = () => { setIsOpen(!isOpen); };
