@@ -6,6 +6,7 @@ import { Boton } from '../Components/Boton.jsx';
 import logoImg2 from '../img/Milogohome.png';
 import { Bento } from '../Components/Bento.jsx';
 
+
 export function CtMain({ logo = logoImg2 }) {
     return (
         <>

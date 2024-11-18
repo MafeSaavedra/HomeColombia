@@ -7,6 +7,7 @@
     gap: 2px;
     margin: 0 auto;
     margin-right: 50px;
+    margin-bottom: 100px;
 
 
 }
@@ -35,8 +36,38 @@
 
 }
 
-.image {
+.image1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+
+
+}
+
+.image3 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+
+}
+
+.image2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-container img {
+    transform: scale(0.9);
+    /* Tamaño inicial más pequeño */
+    transition: transform 0.3s ease-in-out;
+    /* Suavidad en la animación */
+}
+
+.image-container.in-view img {
+    transform: scale(1);
+    /* Tamaño normal */
 }
