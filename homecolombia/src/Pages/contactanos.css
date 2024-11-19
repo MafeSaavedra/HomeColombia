@@ -1,0 +1,457 @@
+/* Aseguramos que el body y html ocupen toda la pantalla */
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+/* El contenedor principal se organiza con Grid */
+.Content-page {
+    display: grid;
+    grid-template-rows: 1fr;
+    /* El contenido ocupa todo el espacio disponible, el footer tiene tamaño automático */
+    grid-template-columns: 1fr;
+    height: 100vh;
+    color: black;
+
+}
+
+
+.contenido-contactados {
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-top: 100px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+h1,
+h3,
+span {
+    font-family: "quicksand", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+h2 {
+    font-family: "quicksand", sans-serif;
+    font-weight: 400;
+
+}
+
+
+
+button {
+    font-weight: bold;
+}
+
+
+/* Titulo principal */
+.titulo h1 {
+    margin-top: 20px;
+    color: #315241;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+/* Estilos para el primer div el cual contiene un mensaje y el formulario */
+.divContenidoFormulario,
+.informacion,
+.parrafoIntermedio {
+    width: 800px;
+    padding: 20px 10px;
+}
+
+.parrafoIntermedio {
+    padding-bottom: 0px;
+}
+
+.divContenidoFormulario,
+.informacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: 0 auto;
+}
+
+/* EStilos para el div que contiene el mensaje que se le da al usuario */
+.divContenidoFormulario .texto {
+    text-align: center;
+    padding: 0px 15px;
+    margin-top: -40px;
+}
+
+.textoTitulo h1 {
+    color: #315241;
+    font-size: 40px;
+}
+
+
+.textoParrafo {
+    margin-top: -10px;
+    padding: 0px 20px;
+}
+
+
+
+/* Estilos para hacer responsive el formulario de contáctenos */
+/*y también para aplicar estilos a el contenedor de la información de contacto  */
+
+.divContenidoFormulario .contenedorBoton {
+    align-items: center;
+    text-align: center;
+    grid-column: span 2;
+}
+
+
+
+
+/*Espacio interno de distribución de las columnas de la parte izquierda del formulario  */
+.formulario .inputPequeños {
+    margin-left: 0%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+}
+
+.formulario .inputContenido {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: left;
+}
+
+/* Estilos para las cajas de entrada de texto */
+.formulario input,
+textarea {
+    width: 100%;
+}
+
+.formulario input {
+    padding-left: 5px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #315241;
+}
+
+/* tamaño de alto de la caja de texto de contenido del mensaje */
+.inputContenido .etiqueta {
+    display: none;
+}
+
+.inputContenido {
+    margin-top: 20px;
+}
+
+textarea {
+    padding: 0 7px;
+    height: 220px;
+    border-radius: 5px;
+    border: 1px solid #315241;
+}
+
+
+
+/* Estilos para la sección de ubicación y datos de la empresa
+    El estilo principal del contenedor información es el mismo que el de formulario
+*/
+
+.informacion {
+    width: 800px;
+    padding: 40px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+}
+
+.informacion .datos {
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px;
+    border: 1px solid #315241;
+    text-align: left;
+
+}
+
+/* párrafos dentro de información de contacto */
+.ajusteParrafo {
+    margin: 0%;
+}
+
+/* Estilo para el div que contiene el mapa */
+.ubicacion {
+    border-radius: 30px;
+    display: grid;
+    place-items: center;
+}
+
+.mapa {
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    margin-left: 5px;
+    border-radius: 1px solid #315241;
+
+}
+
+/* Para eliminar botones que trae por defecto un input numérico navegadores basados en WebKit (Chrome, Safari, etc.) */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Cuando el tamaño de la pantalla sea menor a 1100px cambia la vista a una columna y el botón se asigna un espacio de ocupación de una columna */
+@media(width < 830px) {
+
+    .textoTitulo h1 {
+        /* text-align: center; */
+        font-size: 40px;
+    }
+
+    .textoParrafo h5 {
+        line-height: auto;
+        /* PAra controlar el espacio entre lineas verticalmente */
+    }
+
+    .divContenidoFormulario .texto {
+        text-align: left;
+        padding: 0px;
+
+    }
+
+    .textoParrafo {
+        padding: 0px;
+        margin-top: 0px;
+    }
+
+    .divContenidoFormulario,
+    .informacion,
+    .parrafoIntermedio {
+        width: 500px;
+        grid-template-columns: 1fr;
+    }
+
+    .divContenidoFormulario .contenedorBoton {
+        grid-column: span 1;
+    }
+
+    .formulario .etiqueta {
+        padding: 3% 0%;
+    }
+
+    .formulario .inputPequeños {
+        gap: 10px;
+        grid-template-columns: 1fr 4fr;
+    }
+
+    .inputContenido .etiqueta {
+        display: block;
+        padding: 0px;
+    }
+
+    .informacion .ubicacion {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+
+    .informacion {
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .mapa {
+        width: 159%;
+    }
+}
+
+/* Cuando la pantalla sea menor a 500px la distribución interna de la parte izquierda y derecha pasa a ser de a una columna */
+@media(width < 600px) {
+
+    .informacion {
+        width: 360px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .formulario .inputPequeños {
+        gap: 0px;
+        grid-template-columns: 1fr;
+    }
+
+    .formulario .etiqueta {
+        padding: 8px 0px 0px;
+        text-align: left;
+    }
+
+    .formulario .inputContenido {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    /* main {
+        padding: 10px 5%;
+    } */
+
+    .parrafo {
+        padding: 20px;
+    }
+
+    .mapa {
+        width: 110%;
+    }
+}
+
+/* Estilos para la ventana modal */
+.modal1 {
+    display: none;
+    /* Desaparece el contenedor */
+    position: fixed;
+    /*Mantiene la pantalla fija asi se haga scroll  */
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.208);
+}
+
+
+.modal1-contenedor {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    max-width: 400px;
+    width: 80%;
+    border-radius: 10px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.cerrar {
+    color: rgb(231, 99, 99);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    float: right;
+    /* lo obliga a posicionarse a la derecha  */
+    position: absolute;
+    /* elimina su posición normal en un documento */
+    top: 10px;
+    right: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.cerrar:hover {
+    color: rgb(174, 59, 59);
+    cursor: pointer;
+}
+
+.modal1-contenedor h5 {
+    padding: 5px;
+    text-align: center;
+}
+
+.modal1-contenedor .botones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0% 20%;
+}
+
+#botonSi,
+#botonNo {
+    background-color: rgba(105, 91, 199, 0.534);
+    color: white;
+    padding: 10px 15px;
+    border: 2px solid #70349E;
+    border-radius: 6px;
+    display: block;
+    margin: 10px auto 0;
+    width: 50px;
+    text-align: center;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.25);
+    transition: background-color .9s;
+}
+
+#botonSi:hover,
+#botonNo:hover {
+    background-color: white;
+    color: rgba(54, 93, 65, 0.534);
+
+}
+
+@media(width < 400px) {
+
+    .divContenidoFormulario,
+    .informacion,
+    .parrafoIntermedio {
+        width: 300px;
+        grid-template-columns: 1fr;
+    }
+
+    .titulo h1 {
+        font-size: 45px;
+    }
+
+    .mapa {
+        width: 100%;
+    }
+}
+
+footer {
+    background-color: #315241;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    grid-row: 2 / 3;
+
+}
+
+/* Cinta de eslogan  */
+.cinta-slogan {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #426d57cf;
+    color: white;
+    height: 45px;
+    text-align: center;
+}
+
+.redes-sociales-contactanos {
+    display: grid;
+    width: 70%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    margin: 0 auto;
+    justify-items: center;
+    padding: 20px;
+
+}
+
+.lg-linkedin,
+.lg-facebook,
+.lg-instagram {
+    width: 50px;
+    height: 50px;
+    transition: box-shadow 0.3s ease;
+    /* Suaviza la transición al aplicar el efecto */
+}
+
+.lg-linkedin:hover,
+.lg-facebook:hover,
+.lg-instagram:hover {
+    filter: drop-shadow(2px 8px 6px rgb(210, 226, 225));
+    transform: scale(1.1);
+
+    /* Sombra blanca al pasar el mouse */
+}

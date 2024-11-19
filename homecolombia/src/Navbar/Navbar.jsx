@@ -1,8 +1,7 @@
-
 import { useState } from "react";
 import './Navbar.css';
 import logoImg from '../img/Milogohome.png';
-
+import { Link } from 'react-router-dom';
 
 
 export function Navbar({ logo = logoImg }) {
@@ -12,22 +11,19 @@ export function Navbar({ logo = logoImg }) {
     return (
         <div className="Nav-back">
             <div className="ctn">
-
                 <div className={`navbar-links ${isOpen ? "active" : ""}`} >
                     <div id="ctn-links">
                         <ul>
-                            <li><a href="#home.jsx">Inicio</a></li>
-                            <li><a href="#productos.jsx">Contáctanos</a></li>
-                            <li><a href="#contact">Proyectos</a></li>
+                            <li><Link to="/">Inicio</Link></li>
+                            <li><Link to="/contactanos">Contáctanos</Link></li>
+                            <li><Link to="#contact">Proyectos</Link></li>
                         </ul>
                     </div>
                 </div>
 
-
                 <div className="ctn-logo" id="ctn-logo">
                     <img className="logohome" src={logo} alt="Logo" />
                 </div>
-
 
                 <div className="hamburger" onClick={toggleMenu}>
                     <span className="bar"></span>
@@ -35,13 +31,12 @@ export function Navbar({ logo = logoImg }) {
                     <span className="bar"></span>
                 </div>
 
-
                 <div className={`navbar-links ${isOpen ? "active" : ""}`} >
                     <div id="ctn-links">
                         <ul>
-                            <li><a href="#lotes">Lotes</a></li>
-                            <li><a href="#ubicacion">Ubicación</a></li>
-                            <li><a href="#acerca">Acerca de Nosotros</a></li>
+                            <li><Link to="#lotes">Lotes</Link></li>
+                            <li><Link to="#ubicacion">Ubicación</Link></li>
+                            <li><Link to="#acerca">Acerca de Nosotros</Link></li>
                         </ul>
                     </div>
                 </div>
