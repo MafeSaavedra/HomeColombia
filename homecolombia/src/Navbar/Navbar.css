@@ -45,12 +45,13 @@
     color: white;
     font-size: 18px;
     padding: 8px;
+    transition: all 0.3s;
 }
 
 .navbar-links a:hover {
-    font-weight: bold;
-    font-size: 1em;
-    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+    font-weight: 600;
+    font-size: 18px;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.8);
     /* Sombra iluminada */
     /* Suaviza la transición */
 }
