@@ -7,7 +7,7 @@
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    background-color: #315241;
+    background-color: #b96e2b;
     color: white;
     box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
@@ -16,8 +16,12 @@
 }
 
 .btn-comprar:hover {
-    background-color: #315241ee;
+    background-color: #3e5a80;
     color: rgb(255, 255, 255);
     box-shadow: 4px 6px 12px rgba(21, 71, 38, 0.681);
     transform: translateY(-2px);
 }
+
+/* 
+#
+3e5a80 101123 */

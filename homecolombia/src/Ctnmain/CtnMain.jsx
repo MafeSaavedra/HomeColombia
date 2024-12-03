@@ -1,10 +1,11 @@
 import React from 'react';
 import './CtnMain.css';
-import entradasun from '../img/SunriseEntrada.jpg';
-import Filatres from '../img/Filatres.png';
+import entradasun from '../img/CONDOMINIO.mp4'
+import imgGrande from '../img/imagengrande.png';
 import { Boton } from '../Components/Boton.jsx';
-import logoImg2 from '../img/Milogohome.png';
+import logoImg2 from '../img/herocontent.png';
 import { Bento } from '../Components/Bento.jsx';
+import WhatsappButton from '../Components/WhatsappButton';
 
 
 export function CtMain({ logo = logoImg2 }) {
@@ -12,7 +13,16 @@ export function CtMain({ logo = logoImg2 }) {
         <>
             <section className="Contenedor-First">
                 <div className="Welcome-page">
-                    <img src={entradasun} alt="Entrada" id="imagen-herocontent" />
+                    <div>
+                        <WhatsappButton />
+                    </div>
+                    <video src={entradasun}
+                        autoPlay
+                        loop
+                        muted
+                        id="video-herocontent">
+                    </video>
+
                 </div>
                 <div className="Welcome-page">
                     <section className='hero-content'>
@@ -23,13 +33,13 @@ export function CtMain({ logo = logoImg2 }) {
                             <img className="logohome" src={logo} alt="Logo" />
                             <h3>Donde la calidad y la innovación se unen</h3>
 
-                            <Boton children="Contactanos" />
+
                         </div>
                     </section>
                 </div >
                 <div className="Welcome-page">
                     <div className='Img-filatres'>
-                        <img src={Filatres} alt="Entrada" />
+                        <img src={imgGrande} alt="Entrada" />
                     </div>
                 </div>
                 <div className="Welcome-page" >

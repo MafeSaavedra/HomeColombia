@@ -3,10 +3,11 @@
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(65vh, 1fr));
-    grid-auto-rows: minmax(0, 480px);
+    grid-auto-rows: minmax(0, 490px);
     max-width: 100%;
     justify-content: center;
     align-items: center;
+    gap: 15px;
 }
 
 .Welcome-page {
@@ -31,7 +32,7 @@
 
 
 
-.Welcome-page #imagen-herocontent {
+/* .Welcome-page #imagen-herocontent {
     mask-image: linear-gradient(white 55%, transparent);
     position: absolute;
     object-fit: cover;
@@ -39,6 +40,20 @@
     height: 90%;
     overflow: hidden;
     z-index: -1;
+
+} */
+
+.Welcome-page #video-herocontent {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* Asegura que el video se ajuste sin distorsión */
+    /* mask-image: linear-gradient(white 65%, transparent); */
+    /* -webkit-mask-image: linear-gradient(white 65%, transparent); */
+    z-index: -1;
+    height: 60%;
+    position: absolute;
+
 
 }
 
@@ -67,24 +82,24 @@
     align-items: center;
 }
 
-.hero-content div:first-child {
+/* .hero-content div:first-child {
     grid-column: 1/3;
     grid-row: 1/3;
-    background-color: #315241cc;
+    background-color: #101123;
     width: 100%;
     height: 100%;
     display: flex;
 
 
 
-}
+} */
 
 .hero-content div:nth-child(2) {
     grid-column: 1/3;
     grid-row: 1/3;
-    background-color: #00000093;
-    width: 100%;
-    height: 100%;
+    background-color: #0f0e0ec4;
+    width: 90%;
+    height: 80%;
     margin-left: 20px;
     margin-top: 25px;
     flex-direction: column;
@@ -102,9 +117,15 @@
 .container-hero h3 {
     margin-bottom: 5px;
     font-size: 10px;
-    color: white;
+    color: #f7f0f0;
     font-weight: 200;
 }
+
+.container-hero img {
+    width: 300px;
+    height: auto;
+}
+
 
 .container-hero button {
     display: flex;
@@ -122,8 +143,8 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    width: 75%;
-    color: #315241;
+    width: 70%;
+    color: #101123;
     background-color: transparent;
 
 }
@@ -168,12 +189,12 @@
 
 .Contenido-ultimafila h1 {
     font-size: 35px;
-    color: #315241;
+    color: #101123;
 }
 
 .Contenido-ultimafila h2 {
     font-size: 23px;
-    color: #315241;
+    color: #3e5a80;
     text-shadow: 0px 0px 15px #d7efe0;
     animation: animar-sombra 3s infinite;
 }

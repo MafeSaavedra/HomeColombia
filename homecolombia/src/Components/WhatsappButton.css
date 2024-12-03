@@ -1,0 +1,15 @@
+.whatsapp-button {
+    position: fixed;
+    top: 480px;
+    right: 15px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+#botonflotante {
+    width: 60px;
+    /* Ajusta el tamaño según sea necesario */
+    height: 60px;
+    /* Ajusta el tamaño según sea necesario */
+
+}
