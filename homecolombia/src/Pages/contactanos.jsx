@@ -9,10 +9,10 @@ export function Contactanos() {
         <section>
             <div className="contenido-contactados">
                 <div className="titulo">
-                    <h1>CONTÁCTENOS</h1>
+                    <h1>CONTÁCTANOS</h1>
                 </div>
 
-                <form action="https://formspree.io/f/mrbzwgpp" method="POST" id="formulario">
+                <form action="https://formspree.io/f/mwpkyavj" method="POST" id="formulario">
                     <div className="divContenidoFormulario">
 
                         <div className="texto">
@@ -79,7 +79,7 @@ export function Contactanos() {
             </div>
 
             <div className='cinta-slogan'>
-                <h2>Home Colombia innovación en marcha </h2>
+                <h2>Home Country Colombia, constructora inmobiliaria.</h2>
             </div>
 
             <div className='divContenidoFormulario'>
@@ -87,18 +87,18 @@ export function Contactanos() {
                 <div className="informacion">
                     <div className="datos">
                         <p className="ajusteParrafo">Ubicación: </p>
-                        <p>Colombia, Medellín, Trinidad Carrera 65C Calle 25 -68</p>
+                        <p>Cartagena, Colombia, Le 15#60,27 ED. SALOME
+                            Penthouse</p>
                         <p className="ajusteParrafo">Teléfono: </p>
-                        <p>555-55555</p>
+                        <p>(+57) 3217503712</p>
                         <p className="ajusteParrafo">Correo: </p>
-                        <p>softwaresinfoni@gmail.com</p>
+                        <p>Homecountrycolombiasas@gmail.com</p>
                         <p className="ajusteParrafo">Horario: </p>
-                        <p>Lunes a Domingo de 8:00 am a 2:00 pm</p>
+                        <p>Lunes a Sábado de 8:00 am a 5:00 pm</p>
                     </div>
                     <div className="ubicacion">
                         <iframe className="mapa"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2112.1413391990873!2d-75.58645609527545!3d6.227200389543579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429c80d129989%3A0x1110527907574dc6!2sCra.%2065C%20%2325-68%2C%20Guayabal%2C%20Medell%C3%ADn%2C%20Guayabal%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses-419!2sco!4v1726643132966!5m2!1ses-419!2sco"
-                            allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade">
+                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3923.7616000107923!2d-75.52823262496283!3d10.440483089688586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDI2JzI1LjciTiA3NcKwMzEnMzIuNCJX!5e0!3m2!1ses!2sco!4v1733322645341!5m2!1ses!2sco" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade">
                         </iframe>
                     </div>
                 </div>
@@ -108,17 +108,25 @@ export function Contactanos() {
             </div>
             <div className='redes-sociales-contactanos'>
                 <div>
-                    <img className="lg-linkedin" src={loglinkedin} alt="Logo" />
+                    <a href="https://www.linkedin.com/in/home-country-colombia/" target="_blank" rel="noopener noreferrer">
+                        <img className="lg-linkedin" src={loglinkedin} alt="Logo" />
+                    </a>
                 </div>
 
 
 
                 <div>
-                    <img className="lg-instagram" src={loginstagram} alt="Logo" />
+                    <a href="https://www.instagram.com/homecountrycolombiasas/" target="_blank" rel="noopener noreferrer">
+                        <img className="lg-instagram" src={loginstagram} alt="Logo" />
+                    </a>
+
                 </div>
 
                 <div>
-                    <img className="lg-facebook" src={logfacebook} alt="Logo" />
+                    <a href="https://www.facebook.com/share/x4fVVxN2PmzSXAoR/?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer">
+
+                        <img className="lg-facebook" src={logfacebook} alt="Logo" />
+                    </a>
                 </div>
             </div>
 

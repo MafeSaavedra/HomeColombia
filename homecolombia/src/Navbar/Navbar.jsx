@@ -16,7 +16,7 @@ export function Navbar({ logo = logoImg }) {
                         <ul>
                             <li><Link to="/">Inicio</Link></li>
                             <li><Link to="/contactanos">Contáctanos</Link></li>
-                            <li><Link to="#contact">Proyectos</Link></li>
+                            <li><Link to="/proyecto">Proyectos</Link></li>
                         </ul>
                     </div>
                 </div>

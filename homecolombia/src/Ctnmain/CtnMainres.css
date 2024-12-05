@@ -1,0 +1,97 @@
+/* estilos responsive */
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+    .Contenedor-First {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(5, 520px);
+        max-width: 100%;
+
+        margin: 0 auto;
+    }
+
+    .Welcome-page #video-herocontent {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        z-index: -1;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+
+    }
+
+    .Contenedor-First div:first-child {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .hero-content {
+
+        display: grid;
+        grid-auto-rows: minmax(0, 120px);
+        grid-auto-columns: minmax(0, 120px);
+        justify-content: center;
+        align-items: start;
+    }
+
+    .container-hero img {
+        width: 200px;
+        height: auto;
+
+    }
+
+    .filatres {
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+        color: #101123;
+        background-color: transparent;
+
+    }
+
+    .Img-filatres {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        height: auto;
+
+    }
+
+    .Img-filatres img {
+        width: 100%;
+        margin: 0;
+        height: auto;
+        object-fit: contain;
+
+    }
+
+    .Bento {
+        width: 100%;
+        /* Adapta al ancho del contenedor */
+        max-width: 600px;
+        /* Limita el tamaño en pantallas grandes */
+        height: auto;
+        /* Mantiene las proporciones */
+    }
+
+    .Bento img {
+        width: 100%;
+        /* Asegura que las imágenes ocupen el espacio disponible */
+        height: auto;
+        /* Mantiene las proporciones */
+        object-fit: cover;
+        /* Previene cortes indeseados */
+    }
+
+
+}

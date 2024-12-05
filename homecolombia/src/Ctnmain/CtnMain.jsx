@@ -1,5 +1,6 @@
 import React from 'react';
 import './CtnMain.css';
+import './CtnMainres.css';
 import entradasun from '../img/CONDOMINIO.mp4'
 import imgGrande from '../img/imagengrande.png';
 import { Boton } from '../Components/Boton.jsx';
@@ -44,14 +45,15 @@ export function CtMain({ logo = logoImg2 }) {
                 </div>
                 <div className="Welcome-page" >
                     <section className='filatres'>
-                        <h1>¿Estás buscando un lugar para construir tu hogar o negocio?</h1>
-                        <h2> Invierte en tu futuro, compra un terreno y haz realidad tus sueños.</h2>
-                        <Boton children="Comprar Terreno" />
+                        <h1>¿Estás buscando un lugar para construir tu hogar?</h1>
+                        <h2> Lotes campestres con una alta tasa de valorización. </h2>
+                        <h2>Desde 300 mt en adelante pregunta a uno de nuestros asesores inmobiliarios para agendar una cita </h2>
+                        <Boton children="Agenda tu cita" />
                     </section>
                 </div>
                 <div className="Welcome-page">
-                    <div className='Contenido-ultimafila'> <h1>PROYECTO EN CONSTRUCCIÓN</h1>
-                        <h3>En TorreSan, la innovación y la belleza natural se unen
+                    <div className='Contenido-ultimafila'> <h1>PROYECTO EN  MARCHA</h1>
+                        <h3>En Home Country Colombia, la innovación y la belleza natural se unen
                             para crear un espacio que inspira y renueva. </h3>
                         <h2>¡Ven y descubrelo por ti mismo!</h2>
                         <Boton children="Conocer Proyecto" /></div>
@@ -59,6 +61,7 @@ export function CtMain({ logo = logoImg2 }) {
                 </div>
                 <div className="Welcome-page">
                     {/* Componente creado en la carpeta components */}
+
                     <Bento />
                 </div>
             </section >

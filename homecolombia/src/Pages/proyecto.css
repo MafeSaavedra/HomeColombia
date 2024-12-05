@@ -1,0 +1,101 @@
+/* Estilos para el contenedor del banner */
+.banner-container {
+    margin-top: 55px;
+    width: 100%;
+    height: 500px;
+    /* Altura de 600 píxeles */
+    overflow: hidden;
+    /* Esconde las partes fuera del área visible */
+}
+
+/* Estilos para el banner en sí */
+.banner {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    /* Hace que la imagen cubra todo el área */
+    background-position: center;
+    /* Centra la imagen */
+    transition: background-image 1s ease-in-out;
+    /* Transición suave cuando cambia la imagen */
+}
+
+
+
+
+/* Estilos generales para la sección de proyectos */
+.proyectos-section {
+    width: 80%;
+    margin: 40px auto;
+
+    /* Centra la sección y agrega un margen superior */
+}
+
+/* Estilo del título "Proyectos" */
+.proyectos-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+/* Contenedor de la grid */
+.proyecto-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Dos columnas: una para la descripción y otra para la imagen */
+    gap: 20px;
+}
+
+/* Estilo para cada item de proyecto */
+.proyecto-item {
+    display: flex;
+    justify-content: space-between;
+    /* Separa la descripción de la imagen */
+    align-items: center;
+
+    justify-content: center;
+    align-items: center;
+}
+
+/* Descripción del proyecto */
+.proyecto-description {
+    width: 50%;
+}
+
+/* Título del proyecto */
+.proyecto-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Texto de la descripción */
+.proyecto-text {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+/* Botón "Saber más" */
+.proyecto-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.proyecto-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Imagen del proyecto */
+.proyecto-image {
+    width: 50%;
+}
+
+.proyecto-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
