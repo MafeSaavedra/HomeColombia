@@ -1,23 +1,45 @@
 /* Estilos para el contenedor del banner */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .banner-container {
     margin-top: 55px;
     width: 100%;
-    height: 500px;
+    height: 800px;
     /* Altura de 600 píxeles */
     overflow: hidden;
     /* Esconde las partes fuera del área visible */
 }
 
-/* Estilos para el banner en sí */
+
+
 .banner {
     width: 100%;
+    /* Ajusta el ancho del contenedor según sea necesario */
     height: 100%;
-    background-size: cover;
-    /* Hace que la imagen cubra todo el área */
-    background-position: center;
-    /* Centra la imagen */
-    transition: background-image 1s ease-in-out;
-    /* Transición suave cuando cambia la imagen */
+    /* Asegura que tome todo el espacio disponible */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    /* Centra el contenido horizontalmente */
+    align-items: center;
+    /* Centra el contenido verticalmente */
+    position: relative;
+    /* Permite posicionar elementos internamente si es necesario */
+}
+
+#video-promosunrise {
+    margin-top: 30px;
+    width: 100%;
+    /* El video tomará el ancho completo del contenedor */
+    height: 100%;
+    /* El video tomará la altura completa del contenedor */
+    object-fit: cover;
+    /* Asegura que el video se ajuste al contenedor, cortando si es necesario */
+    overflow: hidden;
+    /* Evita que partes del video sobresalgan */
 }
 
 
@@ -53,49 +75,63 @@
     justify-content: space-between;
     /* Separa la descripción de la imagen */
     align-items: center;
-
     justify-content: center;
     align-items: center;
 }
 
-/* Descripción del proyecto */
-.proyecto-description {
-    width: 50%;
-}
-
-/* Título del proyecto */
-.proyecto-name {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-/* Texto de la descripción */
-.proyecto-text {
-    font-size: 1rem;
-    margin: 10px 0;
-}
-
-/* Botón "Saber más" */
-.proyecto-btn {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.proyecto-btn:hover {
-    background-color: #0056b3;
+/* grid de la pagina */
+.proyecto-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    height: 500px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 /* Imagen del proyecto */
-.proyecto-image {
-    width: 50%;
-}
 
 .proyecto-image img {
     width: 100%;
     height: auto;
     border-radius: 8px;
+}
+
+.div-logosunrise {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Logo-Sunrise {
+    width: 300px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.proyectos-text {
+    text-align: justify;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.tipoinmueble {
+    margin-top: 5px;
+}
+
+.ubicacion-in {
+    margin-top: 5px;
+}
+
+.proyecto-description-proyecto1 {
+    display: block;
+
+    margin-top: 10px;
+    gap: 10px;
+
+}
+
+.proyecto-description-proyecto1 button {
+    margin-bottom: 10px;
+    /* Espaciado adicional debajo de cada botón */
 }

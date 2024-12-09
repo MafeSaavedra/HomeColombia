@@ -1,7 +1,7 @@
 .whatsapp-button {
     position: fixed;
-    top: 480px;
     right: 15px;
+    bottom: 40px;
     z-index: 1000;
     cursor: pointer;
 }

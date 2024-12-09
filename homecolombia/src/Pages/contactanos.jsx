@@ -64,7 +64,7 @@ export function Contactanos() {
                         </div>
 
                         <div className="contenedorBoton">
-                            <p>Los campos marcados con (*) son obligatorios</p>
+                            <p className='camposmarcados'>Los campos marcados con (*) son obligatorios</p>
                             <Boton children="Enviar" className="botonenviar" type="submit" />
 
 

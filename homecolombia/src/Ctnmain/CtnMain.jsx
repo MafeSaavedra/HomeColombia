@@ -46,14 +46,15 @@ export function CtMain({ logo = logoImg2 }) {
                 <div className="Welcome-page" >
                     <section className='filatres'>
                         <h1>¿Estás buscando un lugar para construir tu hogar?</h1>
-                        <h2> Lotes campestres con una alta tasa de valorización. </h2>
-                        <h2>Desde 300 mt en adelante pregunta a uno de nuestros asesores inmobiliarios para agendar una cita </h2>
+                        <h2 className='descripcionfilatres'> Lotes campestres con una alta tasa de valorización. Desde 300 m² en adelante. </h2>
+                        <p className='consulta-asesor'>Consulta con uno de nuestros asesores inmobiliarios para agendar una cita.</p>
+
                         <Boton children="Agenda tu cita" />
                     </section>
                 </div>
                 <div className="Welcome-page">
                     <div className='Contenido-ultimafila'> <h1>PROYECTO EN  MARCHA</h1>
-                        <h3>En Home Country Colombia, la innovación y la belleza natural se unen
+                        <h3 className='parrafo-ultimafila'>En Home Country Colombia, la innovación y la belleza natural se unen
                             para crear un espacio que inspira y renueva. </h3>
                         <h2>¡Ven y descubrelo por ti mismo!</h2>
                         <Boton children="Conocer Proyecto" /></div>

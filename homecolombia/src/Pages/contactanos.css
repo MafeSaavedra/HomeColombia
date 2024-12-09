@@ -5,6 +5,8 @@ html {
     margin: 0;
 }
 
+
+
 /* El contenedor principal se organiza con Grid */
 .Content-page {
     display: grid;
@@ -40,9 +42,16 @@ span {
 h2 {
     font-family: "quicksand", sans-serif;
     font-weight: 400;
+    text-align: justify;
+
 
 }
 
+.camposmarcados {
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
 
 
 button {
@@ -52,7 +61,7 @@ button {
 
 /* Titulo principal */
 .titulo h1 {
-    margin-top: 20px;
+
     color: #3e5a80;
     font-size: 50px;
     text-align: center;
@@ -64,11 +73,15 @@ button {
 .informacion,
 .parrafoIntermedio {
     width: 800px;
-    padding: 20px 10px;
+    padding: 10px 10px;
+    margin-top: 10px;
+
+
 }
 
 .parrafoIntermedio {
     padding-bottom: 0px;
+
 }
 
 .divContenidoFormulario,
@@ -77,6 +90,8 @@ button {
     grid-template-columns: 1fr 1fr;
     gap: 15px;
     margin: 0 auto;
+    margin-top: 15px;
+
 }
 
 /* EStilos para el div que contiene el mensaje que se le da al usuario */
@@ -89,17 +104,20 @@ button {
 .textoTitulo h1 {
     color: #3e5a80;
     font-size: 40px;
+    margin-top: 15px;
 }
 
 .ajusteParrafo {
     font-weight: bold;
+    margin-top: 15px;
+
 
     color: #3e5a80;
 
 }
 
 .textoParrafo {
-    margin-top: -10px;
+    margin-top: 10px;
     padding: 0px 20px;
 }
 
@@ -114,6 +132,9 @@ button {
     grid-column: span 2;
 }
 
+.datos p {
+    margin-bottom: 10px
+}
 
 
 
@@ -168,7 +189,7 @@ textarea {
 
 .informacion {
     width: 800px;
-    padding: 40px 10px;
+    padding: 0px 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;

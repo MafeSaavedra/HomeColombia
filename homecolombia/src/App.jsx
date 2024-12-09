@@ -7,6 +7,7 @@ import { Footer } from './Footer/Footer.jsx';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Contactanos } from "./Pages/contactanos"; // Asegúrate de importar el componente
 import { Proyecto } from "./Pages/proyecto";
+import { Lotes } from "./Pages/Lotes.jsx";
 
 export function App() {
   return (
@@ -20,6 +21,7 @@ export function App() {
             {/* Definir las rutas para que funcione el enrutamiento */}
             <Route path="/contactanos" element={<Contactanos />} />
             <Route path="/proyecto" element={<Proyecto />} />
+            <Route path="/Lotes" element={<Lotes />} />
             <Route path="/" element={<CtMain />} />
             {/* Añadir más rutas según sea necesario */}
           </Routes>

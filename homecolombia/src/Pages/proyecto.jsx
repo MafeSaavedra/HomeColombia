@@ -1,32 +1,26 @@
-import React, { useState, useEffect } from 'react';
 import './proyecto.css';
-import banner1 from '../img/1.png';
-import banner2 from '../img/2.png';
-import banner3 from '../img/3.png';
+
+
 import { Boton } from '../Components/Boton.jsx';
-
-
+import Sunriese from '../img/sunrise.png';
+import Vsunrise from '../img/videosunrise.mp4'
+import Entrada from '../img/imagengrande.png'
+import WhatsappButton from '../Components/WhatsappButton';
 export function Proyecto() {
-    const [currentSlide, setCurrentSlide] = useState(0);
-
-    // Lista de imágenes para el banner
-    const banners = [banner1, banner2, banner3];
-    // Efecto para cambiar las imágenes cada 1.5 segundos
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentSlide((prevSlide) => (prevSlide + 1) % banners.length);
-        }, 1500); // Cambia la imagen cada 1.5 segundos
-
-        // Limpiar el intervalo cuando el componente se desmonte
-        return () => clearInterval(interval);
-    }, [banners.length]);
-
     return (
         <section>
 
+
             <div className="banner-container">
-                <div className="banner" style={{ backgroundImage: `url(${banners[currentSlide]})` }}>
+                <div className="banner" >
                     {/* Aquí podrías agregar más contenido si lo necesitas */}
+                    <video src={Vsunrise}
+                        autoPlay
+                        loop
+                        muted
+                        id="video-promosunrise">
+                    </video>
+                    <WhatsappButton />
                 </div>
             </div>
 
@@ -35,27 +29,24 @@ export function Proyecto() {
                 <h2 className="proyectos-title">CONOCE NUESTROS PROYECTOS</h2>
 
                 <div className="proyecto-grid">
-                    {/* Proyecto 1 */}
-                    <div className="proyecto-item">
-                        <div className="proyecto-description">
-                            <h3 className="proyecto-name">Sunrise</h3>
-                            <p className="proyecto-text">
-                                Situado en el sereno entorno de La Viga (ARJONA), y a solo 20 minutos de Cartagena,
-                                “SUNRISE ESTATES” ofrece la escapada perfecta de la vida urbana sin sacrificar la conveniencia.
-                                Disfruta de la tranquilidad del campo con la ventaja de tener la ciudad a tu alcance.
-                            </p>
 
-                            {/* Tipo de inmueble */}
-                            <div className="proyecto-details">
-                                <p><strong>Tipo de Inmueble:</strong> Apartamentos</p>
-                                <p><strong>Ubicación:</strong> Cartagena, Colombia</p>
-                                <p><strong>Precio:</strong> $150,000 USD</p>
-                            </div>
-                            <Boton children="Saber Más" />
-                        </div>
-                        <div className="proyecto-image">
-                            <img src="https://via.placeholder.com/400x300?text=Proyecto" alt="Proyecto" />
-                        </div>
+                    <div className="proyecto-description-proyecto1">
+                        <div className='div-logosunrise'> <img src={Sunriese} alt="Logosunrise" className='Logo-Sunrise' /></div>
+
+
+                        <p className="proyectos-text">
+                            Ubicado en el apacible entorno de La Viga, en Arjona, y a tan solo 20 minutos de Cartagena, <strong>Sunrise Estates </strong> ofrece la escapada perfecta del bullicio urbano sin renunciar a la comodidad. Disfruta de la serenidad del campo con la ventaja de tener la ciudad al alcance de tu mano..
+                        </p>
+                        <p className='tipoinmueble'><strong>Tipo de Inmueble:</strong></p>
+                        <p>Propiedad Campestre</p>
+                        <p className='ubicacion-in'><strong >Ubicación:</strong></p>
+
+                        <p>Cartagena, Colombia</p>
+                        <br></br>
+                        <Boton children="Saber Más" />
+                    </div>
+                    <div className="proyecto-image">
+                        <img src={Entrada} alt="Proyecto" />
                     </div>
                 </div>
             </div>

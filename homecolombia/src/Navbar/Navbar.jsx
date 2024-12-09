@@ -4,6 +4,8 @@ import logoImg from '../img/Navbar.png';
 import { Link } from 'react-router-dom';
 
 
+
+
 export function Navbar({ logo = logoImg }) {
     const [isOpen, setIsOpen] = useState(false);
     const toggleMenu = () => { setIsOpen(!isOpen); };
@@ -34,7 +36,7 @@ export function Navbar({ logo = logoImg }) {
                 <div className={`navbar-links ${isOpen ? "active" : ""}`} >
                     <div id="ctn-links">
                         <ul>
-                            <li><Link to="#lotes">Lotes</Link></li>
+                            <li><Link to="/Lotes">Lotes</Link></li>
                             <li><Link to="#ubicacion">Ubicación</Link></li>
                             <li><Link to="#acerca">Acerca de Nosotros</Link></li>
                         </ul>

@@ -44,6 +44,7 @@
     word-wrap: break-word;
     font-size: 1.2rem;
     margin: 0 auto;
+
 }
 
 .logof {
@@ -63,7 +64,7 @@
 .info-contacto-foot {
     display: block;
     margin: 5px auto;
-
+    margin-top: 20px;
     width: 100%;
 
 }
@@ -90,8 +91,13 @@
 .Ft-content2 ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
 
+
+}
+
+.info-contacto-foot li {
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 
@@ -117,10 +123,12 @@
         /* Centrar contenido verticalmente */
         text-align: center;
         /* Centrar texto */
+
     }
 
     .Ft-content1 h1 {
         font-size: 1.5rem;
+
         /* Ajustar el tamaño del texto */
     }
 
@@ -138,6 +146,8 @@
         /* Ajustar tamaño de los íconos */
         height: auto;
     }
+
+
 
     .Ft-content2 {
         display: flex;
