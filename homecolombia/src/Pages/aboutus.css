@@ -1,0 +1,212 @@
+.body_contenido_nosotros {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    min-height: 800px;
+    /* Cambié height a min-height */
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+
+    margin-top: 70px;
+    gap: 15px;
+    overflow: hidden;
+    font-family: "quicksand", sans-serif;
+
+}
+
+
+
+
+.introductorio {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    /* Contexto para los elementos hijos */
+}
+
+.introductorio img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.divcentral {
+    position: absolute;
+    /* Posiciona el div relativo a .introductorio */
+    top: 50%;
+    /* Centrado vertical */
+    left: 50%;
+    /* Centrado horizontal */
+    transform: translate(-50%, 30%);
+    /* Ajusta el punto de referencia */
+    width: 800px;
+    height: 500px;
+    background-color: rgb(232, 232, 232);
+    display: grid;
+}
+
+.organizacion {
+    display: grid;
+    grid-template-columns: 60% 50%;
+    grid-template-rows: 1fr;
+    height: 500px;
+}
+
+.organizacion div {
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.texto_sobre_empresa {
+    display: block;
+    width: 80%;
+    font-size: 23px;
+    text-align: justify;
+
+
+}
+
+.imagen {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotpersona {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+}
+
+.elegirnos {
+    width: 80%;
+    /* Ajusta según sea necesario */
+    display: flex;
+    height: auto;
+    /* O ajusta a un tamaño específico si el contenido no determina su altura */
+    justify-content: center;
+    /* Centra horizontalmente los hijos */
+    align-items: center;
+    /* Centra verticalmente los hijos */
+    margin: 0 auto;
+    /* Centra el contenedor dentro de su padre */
+}
+
+.organizacionfilatres {
+    margin-top: 410px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* Dos columnas iguales */
+    grid-template-rows: auto;
+    /* Altura fija */
+    justify-content: center;
+    /* Centra horizontalmente las columnas dentro del grid */
+    align-items: center;
+    /* Centra verticalmente las filas dentro del grid */
+    gap: 10px;
+    /* Opcional: Espaciado entre columnas o filas */
+    width: 100%;
+    /* Asegúrate de que ocupe el espacio deseado */
+    /* Centra el contenedor en su padre */
+}
+
+.porque_elergirnos {
+    width: 80%;
+    text-align: justify;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.porque_elergirnos h1 {
+    text-align: center;
+    font-size: 35px;
+    margin: 15px auto;
+    color: #3e5a80;
+
+
+}
+
+.porque_elergirnos p {
+
+    font-size: 18px;
+    margin-bottom: 15px;
+
+
+
+}
+
+.mision_vision {
+    width: 80%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.mision {
+    width: 90%;
+
+}
+
+.mision p {
+    text-align: justify;
+    font-size: 23px;
+    margin-bottom: 15px;
+
+
+}
+
+.vision {
+    width: 90%;
+
+}
+
+.vision p {
+    text-align: justify;
+    font-size: 23px;
+    margin-bottom: 15px;
+
+
+
+}
+
+.vision h2 {
+    text-align: center;
+    font-size: 35px;
+    margin: 15px auto;
+    font-family: "quicksand", sans-serif;
+    font-weight: 700;
+    color: #3e5a80;
+
+}
+
+.mision h2 {
+    text-align: center;
+    font-size: 35px;
+    margin: 15px auto;
+    font-family: "quicksand", sans-serif;
+    font-weight: 700;
+    color: #3e5a80;
+
+
+
+
+}
+
+.mision p,
+.vision p {
+    line-height: 1.3;
+    /* Ajusta el valor según sea necesario */
+}
