@@ -1,0 +1,58 @@
+.auto-content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto;
+    padding: 15px;
+    max-width: 80%;
+    min-height: 350px;
+    gap: 20px;
+}
+
+
+
+
+
+.auto-content-image img {
+    width: 100%;
+    min-width: 450px;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+    /* margin-left: -20px; */
+}
+
+.auto-content-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: #101123;
+    text-align: left;
+    max-width: 100%;
+
+}
+
+.auto-content-text h1 {
+    font-size: 35px;
+    margin-bottom: 25px;
+    color: #3e5a80;
+    text-align: center;
+}
+
+.auto-content-text h2 {
+    font-size: 1.5rem;
+    color: #101123;
+    text-align: center;
+
+}
+
+.auto-content-text p {
+    font-size: 23px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 10px;
+
+}

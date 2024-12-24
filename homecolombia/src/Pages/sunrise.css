@@ -1,0 +1,244 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.thin-lineuno {
+    width: 80%;
+    margin: 20px auto;
+    border-top: 2px solid black;
+}
+
+.contenedor-botones {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+
+.titulo-Pfila {
+    text-align: center;
+    margin-top: 120px;
+    font-size: 38px;
+    color: #3e5a80;
+}
+
+.cuerpo-del-contenido {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    color: black;
+    width: 80%;
+    gap: 10px;
+}
+
+.primerafila-sunrise {
+    margin-top: 5%;
+
+}
+
+.cuerpo-del-contenido div {
+    color: rgb(0, 0, 0);
+    display: grid;
+    justify-content: center;
+}
+
+.contenido-principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    gap: 10px;
+    margin-top: 0;
+}
+
+.contenido-principal .titulo-lotes {
+    grid-column: 1 / 3;
+    margin-top: 20px;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: "quicksand", sans-serif;
+    color: #3e5a80;
+
+}
+
+.titulo-lotes h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+/* Imagen de los lotes */
+.lotes-vista-up {
+    object-fit: fill;
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+}
+
+/* Div de la imagen de los lotes */
+.imagen-lotes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.segunda-fila-lotes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-lotes-primera-fila {
+    display: flex;
+    flex-direction: column;
+    font-family: "quicksand", sans-serif;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenido-lotes-primera-fila h1 {
+    font-size: 35px;
+    font-weight: 700;
+    margin: 0;
+    color: #3e5a80;
+}
+
+.parrafo-row-first {
+    font-size: 23px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.thin-line {
+    border: none;
+    border-top: 2px solid black;
+    margin: 10px 0;
+}
+
+.contenido-secundario h1 {
+    font-size: 35px;
+    margin-bottom: 5px;
+    color: #3e5a80;
+    text-align: center;
+}
+
+.contenido-tercero {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0 auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.planos {
+    object-fit: cover;
+    width: 100%;
+}
+
+.contenido-tercer-fila {
+    display: block;
+    color: black;
+    font-family: "quicksand", sans-serif;
+    width: 90%;
+    text-align: center;
+}
+
+/* 
+.contenido-tercer-fila p {
+    margin-top: -10px;
+} */
+
+.contenido-tercer-fila h1 {
+    font-size: 38px;
+    margin: 15px auto;
+    color: #3e5a80;
+}
+
+.contenido-tercer-fila p {
+    font-size: 23px;
+    margin: 5px auto;
+}
+
+.div-planos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos generales del botón */
+.boton-con-imagen {
+    border: none;
+    /* Elimina el borde */
+    outline: none;
+    /* Elimina el contorno predeterminado */
+    box-shadow: none;
+    /* Evita sombras adicionales */
+    background-color: transparent;
+    /* Si el fondo no debe cambiar */
+    cursor: pointer;
+    /* Estilo del cursor */
+    padding: 0;
+    /* Ajustar si hay espacios internos */
+}
+
+/* Estado activo (cuando se hace clic) */
+.boton-con-imagen:active {
+    outline: none;
+    /* Evita el contorno */
+    box-shadow: none;
+    /* Elimina cualquier sombra adicional */
+}
+
+/* Estado de foco (al tabular o enfocar) */
+.boton-con-imagen:focus {
+    outline: none;
+    /* Quita el contorno al enfocar */
+    box-shadow: none;
+}
+
+/* Solución extra si los bordes son heredados */
+button {
+    border: none;
+    outline: none;
+}
+
+.titulo-Ubi h1 {
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+    margin: 15px auto;
+    font-size: 47px;
+    font-family: "quicksand", sans-serif;
+    color: #3e5a80;
+
+
+}
+
+
+
+
+
+.resaltado {
+    font-weight: bold;
+    color: #3e5a80;
+
+}

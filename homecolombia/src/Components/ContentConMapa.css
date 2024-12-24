@@ -1,0 +1,41 @@
+.content-con-mapa-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto;
+    padding: 15px;
+    max-width: 80%;
+    min-height: 400px;
+    gap: 20px;
+}
+
+.map-section {
+    width: 90%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #101123;
+    text-align: left;
+    padding: 20px;
+}
+
+.text-section h1 {
+    font-size: 37px;
+    color: #3e5a80;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.text-section p {
+    font-size: 23px;
+    color: #000;
+    margin-bottom: 5px;
+    text-align: center;
+}
