@@ -1,10 +1,11 @@
 import './proyecto.css';
-
+import { Link } from 'react-router-dom';
 
 import { Boton } from '../Components/Boton.jsx';
 import Sunriese from '../img/sunrise.png';
 import Vsunrise from '../img/videosunrise.mp4'
-import Entrada from '../img/imagengrande.png'
+import Vsunrise2 from '../img/videosunrise2.mp4'
+import Entrada from '../img/entrada.png'
 import WhatsappButton from '../Components/WhatsappButton';
 export function Proyecto() {
     return (
@@ -13,8 +14,7 @@ export function Proyecto() {
 
             <div className="banner-container">
                 <div className="banner" >
-                    {/* Aquí podrías agregar más contenido si lo necesitas */}
-                    <video src={Vsunrise}
+                    <video src={Vsunrise2}
                         autoPlay
                         loop
                         muted
@@ -41,9 +41,11 @@ export function Proyecto() {
                         <p>Propiedad Campestre</p>
                         <p className='ubicacion-in'><strong >Ubicación:</strong></p>
 
-                        <p>Cartagena, Colombia</p>
+                        <p>Bolivar, Colombia</p>
                         <br></br>
-                        <Boton children="Saber Más" />
+                        <Link to="/sunrise">
+                            <Boton children="Saber Más" />
+                        </Link>
                     </div>
                     <div className="proyecto-image">
                         <img src={Entrada} alt="Proyecto" />

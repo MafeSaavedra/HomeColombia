@@ -5,25 +5,29 @@ import { Navbar } from './Navbar/Navbar.jsx';
 import { CtMain } from './Ctnmain/CtnMain.jsx';
 import { Footer } from './Footer/Footer.jsx';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Contactanos } from "./Pages/contactanos"; // Asegúrate de importar el componente
+import { Contactanos } from "./Pages/contactanos";
 import { Proyecto } from "./Pages/proyecto";
 import { Lotes } from "./Pages/Lotes.jsx";
+import { Aboutus } from './Pages/Aboutus.jsx';
+import Sunrise from "./Pages/sunrise.jsx";
+import ScrollToTop from './Components/scrollToTop.jsx';  // Aquí importamos con la primera letra mayúscula
 
 export function App() {
   return (
     <Router>
+      <ScrollToTop />  // Llamamos al componente con la primera letra en mayúscula
       <div className="Content-page">
         <header>
           <Navbar />
         </header>
         <main>
           <Routes>
-            {/* Definir las rutas para que funcione el enrutamiento */}
+            <Route path="/" element={<CtMain />} />
             <Route path="/contactanos" element={<Contactanos />} />
             <Route path="/proyecto" element={<Proyecto />} />
-            <Route path="/Lotes" element={<Lotes />} />
-            <Route path="/" element={<CtMain />} />
-            {/* Añadir más rutas según sea necesario */}
+            <Route path="/lotes" element={<Lotes />} />
+            <Route path="/aboutus" element={<Aboutus />} />
+            <Route path="/sunrise" element={<Sunrise />} />
           </Routes>
         </main>
         <footer>

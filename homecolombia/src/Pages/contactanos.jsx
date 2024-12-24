@@ -3,6 +3,8 @@ import { Boton } from '../Components/Boton.jsx';
 import loglinkedin from '../img/linkedin.png';
 import loginstagram from '../img/instagram.png';
 import logfacebook from '../img/facebook.png';
+import WhatsappButton from '../Components/WhatsappButton';
+
 
 export function Contactanos() {
     return (
@@ -11,7 +13,7 @@ export function Contactanos() {
                 <div className="titulo">
                     <h1>CONTÁCTANOS</h1>
                 </div>
-
+                <WhatsappButton />
                 <form action="https://formspree.io/f/mwpkyavj" method="POST" id="formulario">
                     <div className="divContenidoFormulario">
 

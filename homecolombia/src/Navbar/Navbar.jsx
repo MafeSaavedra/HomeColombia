@@ -18,7 +18,7 @@ export function Navbar({ logo = logoImg }) {
                         <ul>
                             <li><Link to="/">Inicio</Link></li>
                             <li><Link to="/contactanos">Contáctanos</Link></li>
-                            <li><Link to="/proyecto">Proyectos</Link></li>
+
                         </ul>
                     </div>
                 </div>
@@ -36,9 +36,8 @@ export function Navbar({ logo = logoImg }) {
                 <div className={`navbar-links ${isOpen ? "active" : ""}`} >
                     <div id="ctn-links">
                         <ul>
-                            <li><Link to="/Lotes">Lotes</Link></li>
-                            <li><Link to="#ubicacion">Ubicación</Link></li>
-                            <li><Link to="#acerca">Acerca de Nosotros</Link></li>
+                            <li><Link to="/proyecto">Proyectos</Link></li>
+                            <li><Link to="/Aboutus">Acerca de Nosotros</Link></li>
                         </ul>
                     </div>
                 </div>
