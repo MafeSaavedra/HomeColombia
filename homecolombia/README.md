@@ -1,8 +1,33 @@
-# React + Vite
+## 📄 Información del Proyecto
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este código corresponde al sitio web comercial de **HOME COUNTRY COLOMBIA S.A.S**, empresa constructora ubicada en Cartagena, Bolívar (Colombia).
 
-Currently, two official plugins are available:
+El desarrollo del sitio fue realizado utilizando las tecnologías:
+- **React.js** para la estructura de componentes,
+- **HTML** y **CSS** para la maquetación y el estilo visual.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A continuación, se presentan los dashboards que componen la interfaz visual de la página, diseñados con enfoque responsivo y experiencia de usuario.
+
+## 🖼️ Dashboards del Sitio
+
+### 🏠 Inicio
+![Inicio](./Inicio-1.png)
+
+### 🏗️ Proyectos
+![Proyectos](./Proyectos-1.png)
+
+### 🧑‍💼 Acerca de Nosotros
+![Acerca de Nosotros](./AcercaDeNosotros-1.png)
+
+### 📬 Contáctanos
+![Contáctanos](./Contactanos-1.png)
+
+---
+
+## ⚖️ Derechos de Autor
+
+Todos los derechos de este código pertenecen exclusivamente a **HOME COUNTRY COLOMBIA S.A.S** y a su desarrolladora **María Fernanda Saavedra Grimaldo**.
+
+El contenido aquí expuesto fue desarrollado con fines comerciales y queda protegido bajo las leyes aplicables de propiedad intelectual.
+
+---
