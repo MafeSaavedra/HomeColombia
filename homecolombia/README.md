@@ -9,18 +9,17 @@ El desarrollo del sitio fue realizado utilizando las tecnologías:
 A continuación, se presentan los dashboards que componen la interfaz visual de la página, diseñados con enfoque responsivo y experiencia de usuario.
 
 ## 🖼️ Dashboards del Sitio
-
 ### 🏠 Inicio
-![Inicio](./Inicio-1.png)
+![Inicio](./Dashboard/Inicio-1.png)
 
 ### 🏗️ Proyectos
-![Proyectos](./Proyectos-1.png)
+![Proyectos](./Dashboard/Proyectos-1.png)
 
 ### 🧑‍💼 Acerca de Nosotros
-![Acerca de Nosotros](./AcercaDeNosotros-1.png)
+![Acerca de Nosotros](./Dashboard/AcercaDeNosotros-1.png)
 
 ### 📬 Contáctanos
-![Contáctanos](./Contactanos-1.png)
+![Contáctanos](./Dashboard/Contactanos-1.png)
 
 ---
 
