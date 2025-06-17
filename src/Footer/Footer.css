@@ -1,0 +1,173 @@
+.Footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 0.5fr;
+    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+    margin: 0 auto;
+    width: 95%;
+    height: 100%;
+    gap: 10px 10px;
+    background-color: #101123;
+    color: white;
+
+}
+
+.Section {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #101123;
+
+
+}
+
+.Ft-content1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    border-radius: 8px;
+    width: 100%;
+    min-height: 100px;
+    flex-wrap: wrap;
+    overflow: hidden;
+    word-wrap: break-word;
+    flex-direction: column;
+    gap: 10px;
+
+
+
+}
+
+.Ft-content1 h1 {
+    text-align: left;
+    word-wrap: break-word;
+    font-size: 1.2rem;
+    margin: 0 auto;
+
+}
+
+.logof {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+    margin-right: 60px;
+
+
+}
+
+.logof:hover {
+    /* //Sombra iluminada (desplazamiento en x, desplazamiento en y, grosor de la sombra, color) */
+    filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.8));
+}
+
+.info-contacto-foot {
+    display: block;
+    margin: 5px auto;
+    margin-top: 20px;
+    width: 100%;
+
+}
+
+.logoinsta,
+.logoface,
+.logolinke {
+    width: 25px;
+    height: auto;
+}
+
+.logoinsta:hover,
+.logoface:hover,
+.logolinke:hover {
+    filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.8));
+}
+
+.Ft-content2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.Ft-content2 ul {
+    list-style-type: none;
+    padding: 0;
+
+
+}
+
+.info-contacto-foot li {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+
+@media (max-width: 600px) {
+    .Footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* Una sola columna */
+        grid-template-rows: 1fr, 2fr, 2fr;
+        /* Tres filas */
+        gap: 10px;
+        /* Espaciado entre filas */
+    }
+
+    .Ft-content1,
+    .Ft-content2,
+    .info-contacto-foot {
+        width: 100%;
+        /* Asegurar que cada sección ocupe el ancho completo */
+        justify-content: center;
+        /* Centrar contenido */
+        align-items: center;
+        /* Centrar contenido verticalmente */
+        text-align: center;
+        /* Centrar texto */
+
+    }
+
+    .Ft-content1 h1 {
+        font-size: 1.5rem;
+
+        /* Ajustar el tamaño del texto */
+    }
+
+    .logof {
+        width: 70%;
+        /* Reducir tamaño del logo para móviles */
+        margin-right: 0;
+        /* Quitar margen derecho */
+    }
+
+    .logoinsta,
+    .logoface,
+    .logolinke {
+        width: 30px;
+        /* Ajustar tamaño de los íconos */
+        height: auto;
+    }
+
+
+
+    .Ft-content2 {
+        display: flex;
+        /* Cambiar a flex para alineación en una columna */
+        flex-direction: column;
+        gap: 10px;
+        /* Espaciado entre listas */
+    }
+
+    .Ft-content2 ul {
+        text-align: center;
+        /* Centrar listas */
+    }
+
+    .Ft-content1 {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        margin: 0 auto;
+        flex-direction: row;
+        gap: 40px;
+    }
+}
