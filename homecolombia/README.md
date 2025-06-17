@@ -10,16 +10,16 @@ A continuación, se presentan los dashboards que componen la interfaz visual de 
 
 ## 🖼️ Dashboards del Sitio
 ### 🏠 Inicio
-![Inicio](./Dashboard/Inicio-1.png)
+![Inicio](./Dashboard/Inicio-1.jpg)
 
 ### 🏗️ Proyectos
-![Proyectos](./Dashboard/Proyectos-1.png)
+![Proyectos](./Dashboard/Proyectos-1.jpg)
 
 ### 🧑‍💼 Acerca de Nosotros
-![Acerca de Nosotros](./Dashboard/AcercaDeNosotros-1.png)
+![Acerca de Nosotros](./Dashboard/AcercaDeNosotros-1.jpg)
 
 ### 📬 Contáctanos
-![Contáctanos](./Dashboard/Contactanos-1.png)
+![Contáctanos](./Dashboard/Contactanos-1.jpg)
 
 ---
 
